@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="iOS Style Modern Calculator designed with pure HTML and CSS featuring smooth animations, responsive layout, and realistic iPhone design.">
+    <title>iOS Calculator</title>
+    <!-- Google Fonts for authentic iOS typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    
+  <link rel="stylesheet" crossorigin href="/assets/index-CoXWSUhS.css">
+</head>
+
+<body>
+    <main class="calculator-wrapper">
+        <section class="calculator" aria-label="iOS Calculator">
+            <!-- Calculator Display Screen -->
+            <div class="calculator-display" aria-live="polite">
+                <!-- <span class="display-text" id="display-value">0</span> -->
+            </div>
+            <!-- Keypad with 19 interactive buttons -->
+            <div class="calculator-keypad" id="display">
+                <!-- Row 1: Function Keys & Divide -->
+                <button  onclick="displayValue('AC')" class="btn btn-function" >AC</button>
+                <button onclick="displayValue('Del')" class="btn btn-function"  >+/−</button>
+                <button onclick="displayValue('%')" class="btn btn-function" >%</button>
+                <button  onclick="displayValue('÷')" class="btn btn-operator" >÷</button>
+
+                <!-- Row 2: Numbers 7, 8, 9 & Multiply -->
+                <button onclick="displayValue('7')" class="btn btn-number"> 7</button>
+                <button onclick="displayValue('8')" class="btn btn-number"> 8</button>
+                <button onclick="displayValue('9')" class="btn btn-number">9 </button>
+                <button onclick="displayValue('x')" class="btn btn-operator">×</button>
+
+                <!-- Row 3: Numbers 4, 5, 6 & Subtract -->
+                <button onclick="displayValue('4')" class="btn btn-number"> 4</button>
+                <button onclick="displayValue('5')" class="btn btn-number"> 5</button>
+                <button onclick="displayValue('6')" class="btn btn-number">6</button>
+                <button onclick="displayValue('-')" class="btn btn-operator">−</button>
+
+                <!-- Row 4: Numbers 1, 2, 3 & Add -->
+                <button onclick="displayValue('1')" class="btn btn-number">1</button>
+                <button onclick="displayValue('2')" class="btn btn-number">2</button>
+                <button onclick="displayValue('3')" class="btn btn-number">3</button>
+                <button onclick="displayValue('+')" class="btn btn-operator">+</button>
+
+                <!-- Row 5: 0 (wide capsule), Decimal & Equals -->
+                <button onclick="displayValue('0')" class="btn btn-number btn-zero">
+                    <span class="zero-label">0</span>
+                </button>
+                <button onclick="displayValue('.')" class="btn btn-number btn-dot">.</button>
+                <button onclick="displayValue('=')" class="btn btn-operator">=</button>
+            </div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
